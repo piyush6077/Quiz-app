@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    background: rgb(2, 2, 94);
+    width: 100vw;
+    height: 100vh;
+    font-family: "Tajawal", sans-serif
+}
+
+.app{
+    width: 44%;
+    border-radius: 10px;
+    background: white;
+    height:max-content;
+    /* line-height: 50px; */
+    padding: 20px 40px 40px;
+    margin-top: 50px;
+}
+
+.app h1{
+    color: rgb(14, 14, 85);
+    margin: 15px 0;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(12, 12, 167);        
+}
+
+.questions{
+    margin: 15px 0 5px;
+}
+
+.answers-button{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 13px 15px;
+    margin: 15px 0;
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+}
+
+.btn:hover:not([disabled]){
+    background: rgba(0, 0, 0, 0.815);
+    border :1px solid rgba(0, 0, 0, 0.815);
+    color: white;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    padding: 13px 50px;
+    font-size: 15px;
+    background: rgb(24, 24, 150);
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    margin: 20px auto 0;
+    /* width: 150px; */
+    cursor:pointer;
+    display: none;
+}
+
+
+.correct{
+    background: rgba(56, 241, 56, 0.5);
+    border: 1px solid rgb(21, 112, 21);
+}
+
+.incorrect{
+    background: rgba(250, 18, 2, 0.45);
+    border: 1px solid rgb(199, 5, 5);
+}
+
+@media screen and (max-width:650px){
+    .app{
+        width:90%;
+        margin-top: 0px;
+        margin: 50px 10px;
+        justify-content: center;
+    }
+    
+}
